@@ -1,26 +1,118 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0A0A1A;
+  --foreground: #F8FAFC;
+  
+  --primary-green: #00A651;
+  --accent-navy: #1A1A2E;
+  --highlight-green-accent: #00FF87;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+  --color-primary-green: var(--primary-green);
+  --color-accent-navy: var(--accent-navy);
+  --color-highlight-green-accent: var(--highlight-green-accent);
+  
+  --font-sans: var(--font-dm-sans), sans-serif;
+  --font-display: var(--font-barlow-condensed), sans-serif;
+  --font-subdisplay: var(--font-space-grotesk), sans-serif;
+  --font-mono: var(--font-orbitron), monospace;
+  --font-urdu: var(--font-noto-urdu), serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Custom CSS Gradients & Utilities */
+.bg-hero-radial {
+  background: radial-gradient(ellipse at 30% 50%, #062f15 0%, #0c0c24 45%, #050510 100%);
+}
+
+.bg-fori-flash {
+  background: linear-gradient(135deg, #00A651 0%, #00D46A 50%, #00FF87 100%);
+}
+
+.bg-emerald-dusk {
+  background: linear-gradient(160deg, #00A651 0%, #00D46A 40%, #00FF87 100%);
+}
+
+.bg-trust-layer {
+  background: linear-gradient(180deg, #1A1A2E 0%, #0F1729 50%, #051405 100%);
+}
+
+.bg-authority-gradient {
+  background: linear-gradient(135deg, #050510 0%, #101026 50%, #052410 100%);
+}
+
+.glass-card {
+  background: linear-gradient(135deg, rgba(0, 166, 81, 0.04) 0%, rgba(26, 26, 46, 0.4) 100%);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 166, 81, 0.15);
+}
+
+.glass-card-orange {
+  background: linear-gradient(135deg, rgba(0, 255, 135, 0.04) 0%, rgba(26, 26, 46, 0.4) 100%);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 255, 135, 0.15);
+}
+
+.glass-card:hover {
+  border-color: rgba(0, 166, 81, 0.35);
+  box-shadow: 0 0 25px rgba(0, 166, 81, 0.1);
+  transform: translateY(-4px);
+}
+
+.glass-card-orange:hover {
+  border-color: rgba(0, 255, 135, 0.35);
+  box-shadow: 0 0 25px rgba(0, 255, 135, 0.1);
+  transform: translateY(-4px);
+}
+
+.glow-green {
+  box-shadow: 0 0 35px rgba(0, 166, 81, 0.35);
+}
+
+.glow-orange {
+  box-shadow: 0 0 35px rgba(0, 255, 135, 0.35);
+}
+
+/* Animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 0.5; }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 8s ease-in-out infinite;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0A1A;
+}
+::-webkit-scrollbar-thumb {
+  background: #1A1A2E;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00A651;
 }

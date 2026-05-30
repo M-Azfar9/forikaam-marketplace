@@ -1,8 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ForiKaam 🇵🇰
 
-## Getting Started
+**"Abhi Lagao, Sahi Daam Pao"** — Book Now, Get the Right Price.
 
-First, run the development server:
+ForiKaam (فوری کام) is Pakistan's first parameterized reverse-auction labor marketplace. It connects verified, NADRA-authenticated skilled workers (Karigars) with urban households through a real-time bidding system. 
+
+This repository contains the source code for the **ForiKaam Startup Landing Page**, a high-impact, mobile-first web experience designed to attract homeowners, Karigars, and early investors.
+
+## 🚀 Key Features
+
+- **Dual-Audience Waitlist:** Targeted signups for both Homeowners and Karigar Workers.
+- **Interactive Bidding Simulator:** A custom-built, React-powered interactive dashboard simulating the real-time reverse-auction flow (Homeowner posting -> Geofence broadcasts -> Live bids ledger -> Biometric verification scanner -> Dispatch and tracking).
+- **NADRA Biometric Trust Layer:** Highlights our core USP—instant, contactless biometric identification via NADRA's Nishan Pakistan API.
+- **Bilingual Support:** Seamless toggling between English and Urdu to cater to the diverse Pakistani market.
+- **Premium Aesthetics:** Dark mode glassmorphism, vibrant emerald green accents (`#00A651`), and dynamic CSS animations to convey speed and trust.
+
+## 🛠 Tech Stack
+
+- **Framework:** [Next.js](https://nextjs.org/) (v16.2.6) - React framework for production.
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/) (v4) - Utility-first CSS framework for rapid UI development.
+- **Language:** TypeScript - For type safety and better developer experience.
+- **Fonts:** Next.js Font Optimization (Barlow Condensed, Space Grotesk, DM Sans, Orbitron, Noto Nastaliq Urdu).
+
+## 💻 Getting Started
+
+First, clone the repository and install the dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -10,27 +41,25 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `app/` - Next.js App Router pages and global layouts (`page.tsx`, `layout.tsx`, `globals.css`).
+- `components/` - Reusable React components including the core interactive simulators (`AuctionCityScene.tsx`, `PhoneMockupScene.tsx`, `PakistanMap.tsx`, `WaitlistForm.tsx`, `ShieldParticles.tsx`).
+- `lib/` - Utility functions and translations (`translations.ts`).
+- `public/` - Static assets like images and icons.
 
-## Learn More
+## 🌐 Brand Identity
 
-To learn more about Next.js, take a look at the following resources:
+- **Primary Color:** Electric Green (`#00A651`) — signifies speed, action, and "go".
+- **Accent Color:** Deep Navy (`#1A1A2E`) — signifies trust and reliability.
+- **Highlight Color:** Saffron Orange (`#FF6B35`) — currently phased out in favor of a cleaner, all-green aesthetic, but originally part of the palette.
+- **Typography:** Heavy sans-serifs for English headers, Noto Nastaliq for authentic Urdu script rendering.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📄 License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+© 2026 ForiKaam (Pvt.) Ltd. · SECP Registered · Pakistan
+Official NADRA Nishan Pakistan API Partner
