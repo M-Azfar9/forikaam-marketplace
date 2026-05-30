@@ -816,7 +816,7 @@ export default function Home() {
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm mb-6 font-urdu">
               {t.footDescription}
             </p>
-            <span className="text-xs text-slate-500 block">Founder Email: muhammadazfar716@gmail.com</span>
+            <span className="text-xs text-slate-500 block">Contact Us: muhammadazfar716@gmail.com</span>
           </div>
 
           {/* Navigation Links Column */}
