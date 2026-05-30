@@ -61,5 +61,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## 📄 License
 
-© 2026 ForiKaam (Pvt.) Ltd. · SECP Registered · Pakistan
-Official NADRA Nishan Pakistan API Partner
+© 2026 ForiKaam (Pvt.) Ltd. · Pakistan

@@ -146,8 +146,7 @@ export const translations = {
     footCompany: "Company",
     footLegal: "Legal",
     footConnect: "Connect With Us",
-    footCopyright: "© 2026 ForiKaam (Pvt.) Ltd. · SECP Registered · Pakistan",
-    footNadraPartner: "Official NADRA Nishan Pakistan API Partner"
+    footCopyright: "© 2026 ForiKaam (Pvt.) Ltd. · Pakistan"
   },
   ur: {
     // Navigation
@@ -294,7 +293,6 @@ export const translations = {
     footCompany: "کمپنی",
     footLegal: "قانونی معلومات",
     footConnect: "ہم سے رابطہ کریں",
-    footCopyright: "© 2026 فوریکام (پرائیویٹ) لمیٹڈ · ایس ای سی پی رجسٹرڈ · پاکستان",
-    footNadraPartner: "آفیشل نادرا Nishan Pakistan API پارٹنر"
+    footCopyright: "© 2026 فوریکام (پرائیویٹ) لمیٹڈ · پاکستان"
   }
 };
